@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      title  Hello Pug
+   body
+      h1(style="color:green") student list
+      table(border="2" cellpadding="10") 
+         thead 
+            th FullName
+                button sort
+            th Email
+                button sort
+            th Mobile
+                button sort
+         each val in allstudents 
+            tr 
+                td #{val.fullname}
+                td #{val.email}
+                td #{val.mobile}

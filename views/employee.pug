@@ -1,0 +1,21 @@
+doctype html
+html
+   head
+      title employee pug
+   body
+      h1(style="color:green") employee list
+      table(border="2" cellpadding="10") 
+        thead 
+            th FullName
+                button sort
+            th industry
+                button sort
+            th profession
+                button sort
+        each val in allemployee
+            tr 
+                td #{val.fullname}
+                td #{val.industry}
+                td #{val.profession}
+
+      
