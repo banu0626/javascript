@@ -8,14 +8,15 @@ html
         thead 
             th FullName
                 button sort
-            th industry
+            th email 
                 button sort
-            th profession
+            th mobile
                 button sort
         each val in allemployee
             tr 
-                td #{val.fullname}
-                td #{val.industry}
-                td #{val.profession}
+                td
+                    a(href=`/employee/details/${val.mobile}`) #{val.fullname}
+                td #{val.email}
+                td #{val.mobile}
 
       
